@@ -148,18 +148,7 @@
       </div>
     </div>
 
-    <?php
-      if($_GET['msg']){ 
-        <script>
-        function abreModal() {
-          $("modalsucesso").modal({
-               show: true
-             });
-          }
-         setTimeout(abreModal, 1000);
-        </script>
-      }
-    ?>
+    
 
     <!-- Modal -->
     <div class="modal fade" id="modalsucesso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

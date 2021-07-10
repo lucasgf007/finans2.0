@@ -1,8 +1,9 @@
 <?php include("conexao.php")?>
 <?php 
+// sha1 () deixa a senha criptografada 
         $nome =  $_POST["nome"];
         $email =  $_POST["email"];
-        $senhaUse =  $_POST["senha"];
+        $senhaUse = sha1($_POST["senha"]);
         
         
         $host = "localhost";
@@ -24,7 +25,7 @@
         VALUES ( '".$nome."', '".$email."', '".$senhaUse."')";
         
         if ($conn->query($sql) === TRUE) {
-          header("Location: registro.php");
+          header("Location: registro.php?msg=sucesso");
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }

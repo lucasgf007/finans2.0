@@ -148,6 +148,12 @@
       </div>
     </div>
 
+    <?php
+      if($_GET['msg']){ 
+        echo $_GET['msg'];
+      }
+    ?>
+
   </body>	
 
 </html>

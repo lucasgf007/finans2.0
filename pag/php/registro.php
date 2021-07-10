@@ -151,30 +151,12 @@
     <?php
       if($_GET['msg']){ 
         echo " 
-        <!-- Modal  -->
-        <div class="modal fade" id="modalGravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div id="modal_titulo_div">
-                <h5 class="modal-title" id="modal_titulo">       </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Seja Bem  vindo a nossa plataforma</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button"  id="modal_botao" data-dismiss="modal"></button>
-                
-              </div>
-            </div>
-          </div>
+        <div>
+          <h1> Seja bem vindo a nossa plataforma</h1>
         </div>
         ";
       }
     ?>
- 
   </body>	
 
 </html>

@@ -151,7 +151,12 @@
     <?php
       if($_GET['msg']){ 
         <script>
-          $('#modalsucesso').modal('show');
+        function abreModal() {
+          $("modalsucesso").modal({
+               show: true
+             });
+          }
+         setTimeout(abreModal, 1000);
         </script>
       }
     ?>

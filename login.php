@@ -49,9 +49,9 @@
                 </div>
             
                 <!-- Login Form -->
-                <form action="pag/php/salvar.php" method="post">
+                <form action="pag/php/validar_user.php" method="post">
                   <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-                  <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
+                  <input type="text" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
                   <input type="submit" class="fadeIn fourth bg-primary" value="Entrar">
                 </form>
             

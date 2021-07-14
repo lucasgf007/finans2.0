@@ -12,7 +12,7 @@
     if ($result->num_rows > 0) {
         // comparar
     while($row = $result->fetch_assoc()) {
-        if(($row["email"] == $login || $row["nome"] == $login) && $row["senha"] == sha1($senha)){
+        if($row["email"] == $login && $row["senha"] == sha1($senha)){
             $estaLogado = true;
             header("Location: registro.php?msg=sucesso");
 

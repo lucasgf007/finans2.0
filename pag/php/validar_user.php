@@ -12,18 +12,13 @@
     if ($result->num_rows > 0) {
         // comparar
     while($row = $result->fetch_assoc()) {
-        if($row["email"] == $email && $row["senha"] == sha1($senha)){
-            $estaLogado = true;
+        if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
+            header("Location: registro.php?msg=logado");
         }
     }
     } else {
         echo "0 results";
     }
-    if($estaLogado){
-        echo "esta logado";
-    } else {
-        echo "não esta logado";
-    }
-
+    
     $conn->close();
 ?>

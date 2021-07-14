@@ -1,3 +1,4 @@
+<?php require_once('restrito/retrito.php');?>
 <?php include("conexao.php")?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,6 +30,10 @@
 	</head>
 
   <body onload="carregaLitsaDespesas()">
+
+  <?php
+        
+    ?>
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">

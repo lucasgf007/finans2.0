@@ -14,7 +14,7 @@
     while($row = $result->fetch_assoc()) {
         if($row["email"] == $login && $row["senha"] == sha1($senha)){
             $estaLogado = true;
-            header("Location: registro.php?msg=sucesso");
+            //header("Location: registro.php?msg=sucesso");
 
                     //echo "  /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]."<br>";
         } else{
@@ -24,5 +24,11 @@
     } else {
         echo "0 results";
     }
+    if($estaLogado){
+        echo "esta logado"
+    } else {
+        echo "não esta logado"
+    }
+
     $conn->close();
 ?>

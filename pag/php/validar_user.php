@@ -1,9 +1,9 @@
+<?php include("conexao.php")?>
+
 <?php
     // Start the session
     session_start();
 ?>
-
-<?php include("conexao.php")?>
 
 <?php
     $email = $_POST["email"];
@@ -18,7 +18,6 @@
         // comparar
     while($row = $result->fetch_assoc()) {
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
-            $_SESSION["estaLogado"] = false;
             header("Location: registro.php?msg=logado");
             $_SESSION["user"] = $row["id"];
         }

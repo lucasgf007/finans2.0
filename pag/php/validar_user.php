@@ -6,7 +6,7 @@
     $estaLogado = false;
 
 
-    $sql = "SELECT * FROM despesas";
+    $sql = "SELECT * FROM usuario";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

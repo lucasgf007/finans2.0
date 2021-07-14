@@ -50,8 +50,8 @@
             
                 <!-- Login Form -->
                 <form action="pag/php/validar_user.php" method="post">
-                  <input type="email" id="email" class="fadeIn second" name="email" placeholder="E-mail">
-                  <input type="password" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
+                  <input type="text" id="email" class="fadeIn second" name="email" placeholder="E-mail">
+                  <input type="text" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
                   <input type="submit" class="fadeIn fourth bg-primary" value="Entrar">
                 </form>
             

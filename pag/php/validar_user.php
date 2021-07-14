@@ -25,9 +25,9 @@
         echo "0 results";
     }
     if($estaLogado){
-        echo "esta logado"
+        echo "esta logado";
     } else {
-        echo "não esta logado"
+        echo "não esta logado";
     }
 
     $conn->close();

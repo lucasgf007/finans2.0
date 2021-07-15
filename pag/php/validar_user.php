@@ -19,7 +19,8 @@
     while($row = $result->fetch_assoc()) {
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
             header("Location: registro.php?msg=logado");
-            $_SESSION["user"] = $row["id"];
+            $_SESSION["email"] = $row["email"];
+            $_SESSION["senha"] = $row["senha"];
         } else {
             header("Location: ../../login.php?msg=nao_encontrado");
         }

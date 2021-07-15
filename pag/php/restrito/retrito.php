@@ -1,14 +1,9 @@
 <?php
 
-session_start();
-class Auth {
+@session_start(); // Inicializa a sessão
 
-    public static function handleLogin(){
-        session_start();
-        if (!isset($_SESSION['user'])) {
-
-            header('location: ' . URL);
-            exit();
-        }
-    }
+if (! isset($_SESSION["email"],$_SESSION["senha"])) // aqui péga o valor do nome do campo da pagina de login
+echo "<script>window.location='../../../login.php'</script>"; //caso não esteja correto ela envia para a pagina determianda
 }
+
+?>

@@ -1,4 +1,4 @@
-<?Auth::handleLogin?>
+<?php include("restrito/retrito.php")?>
 <?php include("conexao.php")?>
 <!DOCTYPE html>
 <html lang="pt-br">

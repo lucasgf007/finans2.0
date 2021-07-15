@@ -1,5 +1,14 @@
 <?php
+
 session_start();
-// Se o usuário não está logado, manda para página de login.
-if (!isset($_SESSION['user'])) header("Location: ../../../login.php");
-exit; // Encerra a execução do script
+class Auth {
+
+    public static function handleLogin(){
+        session_start();
+        if (!isset($_SESSION['user'])) {
+
+            header('location: ' . URL);
+            exit();
+        }
+    }
+}

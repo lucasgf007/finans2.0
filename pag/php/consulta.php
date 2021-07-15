@@ -51,7 +51,7 @@
           </ul>
           
         </div>
-        <div class="collapse navbar-collapse float-rigth" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse float-right text-right" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <?php

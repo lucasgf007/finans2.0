@@ -54,8 +54,9 @@
         <div class="collapse navbar-collapse float-rigth" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              
-                <a class="nav-link" href="logout.php">Sair</a>
+                <?php
+                  <a class="nav-link" href="logout.php">Sair</a>
+                ?>
               
               
             </li>

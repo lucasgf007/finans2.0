@@ -11,7 +11,7 @@ session_unset();
 
 // destroy the session
 session_destroy();
-header("Location: ../../index.html?msg=desconectado");
+header("Location: ../../login.php?msg=desconectado");
 ?>
 
 </body>

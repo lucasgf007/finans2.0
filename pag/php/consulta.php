@@ -30,11 +30,6 @@
 
   <body onload="carregaLitsaDespesas()">
 
-  <?php
-        
-    ?>
-
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -44,7 +39,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="registro.php">Cadastro</a>
@@ -56,6 +51,15 @@
           </ul>
           
         </div>
+        <div class="collapse navbar-collapse float-rigth" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="logout.html">Sair</a>
+            </li>
+          </ul>
+          
+        </div>
+        
       </div>
     </nav>
 

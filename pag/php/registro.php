@@ -39,13 +39,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="registro.php">Cadastro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="consulta.php">Consulta</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="collapse navbar-collapse float-rigth" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="logout.html">sair</a>
             </li>
           </ul>
           

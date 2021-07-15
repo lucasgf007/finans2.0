@@ -9,8 +9,6 @@
     $email = $_POST["email"];
     $senha = $_POST["senha"];
     
-
-
     $sql = "SELECT * FROM usuario";
     $result = $conn->query($sql);
 

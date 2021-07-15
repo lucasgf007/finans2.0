@@ -20,6 +20,8 @@
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
             header("Location: registro.php?msg=logado");
             $_SESSION["user"] = $row["id"];
+        } else {
+            header("Location: ../../login.php?msg=nao_encontrado");
         }
     }
     } else {

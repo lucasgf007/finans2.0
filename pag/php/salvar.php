@@ -25,7 +25,7 @@
         VALUES ( '".$nome."', '".$email."', '".$senhaUse."')";
         
         if ($conn->query($sql) === TRUE) {
-          header("Location: registro.php?msg=sucesso");
+          header("Location: inicio.php?msg=sucesso");
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }

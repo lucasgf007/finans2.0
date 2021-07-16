@@ -19,7 +19,7 @@
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
             $_SESSION["estaLogado"] = true;
             $_SESSION["email"] = $row["email"];
-            header("Location: registro.php?msg=logado");
+            header("Location: inicio.php?msg=logado");
             
             
         } else {

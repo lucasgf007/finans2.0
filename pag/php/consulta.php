@@ -46,6 +46,9 @@ session_start();
         <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+              <a class="nav-link" href="inicio.php">Início</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="registro.php">Cadastro</a>
             </li>
             <li class="nav-item active">

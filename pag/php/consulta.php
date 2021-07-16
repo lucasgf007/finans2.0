@@ -58,7 +58,7 @@ session_start();
         <div class="collapse navbar-collapse float-right text-right" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                
+              <a class="nav-link" href="logout.html">sair</a>
             </li>
           </ul>
           

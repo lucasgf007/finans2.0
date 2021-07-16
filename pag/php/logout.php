@@ -1,18 +1,12 @@
 <?php
-session_start();
+    session_start();
 ?>
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 // remove all session variables
-session_unset();
+    session_unset();
 
 // destroy the session
-session_destroy();
-header("Location: ../../login.php?msg=desconectado");
+    session_destroy();
+    
+    header("Location: ../../login.php?msg=desconectado");
 ?>
-
-</body>
-</html>

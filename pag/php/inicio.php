@@ -96,7 +96,7 @@ session_start();
                 <a href="consulta.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
                   <i class="fas fa-database"></i>
                 </a>
-                <a href="dash/dash.html.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
+                <a href="dash/dash.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
                   <i class="fas fa-chart-line"></i>
                 </a>
                 

@@ -30,11 +30,13 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
       <div class="container">
-        <a class="navbar-brand" href="#">
-           <img src="pag/img/logo.png" width="50" height="35" alt="Orçamento pessoal">
-        </a>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="pag/img/logo.png" width="50" height="35" alt="Orçamento pessoal">
+          </a>
+        </div>
       </div>
     </nav>
 

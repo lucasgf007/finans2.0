@@ -36,61 +36,77 @@ session_start();
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="../../index.html">
-           <img src="../img/logo.png" width="50" height="35" alt="Orçamento pessoal">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        
+        
+          
+            <a class="navbar-brand" href="../../index.html">
+              <img src="../img/logo.png" width="50" height="35" alt="Orçamento pessoal">
+           </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse float-left text-left" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="inicio.php">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.php">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consulta.php">Consulta</a>
+                </li>
+              </ul>
+              
+            </div>
+          
+          
+            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto text-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="logout.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </a>
+                </li>
+              </ul>
+              
+            </div>
+          
+        
 
-        <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="inicio.php">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registro.php">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="consulta.php">Consulta</a>
-            </li>
-          </ul>
-          
-        </div>
-        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="logout.html">sair</a>
-            </li>
-          </ul>
-          
-        </div>
+        
       </div>
     </nav>
 
-    <section class="bg-dark">
+    <section class="">
       <div class="container banner">
         <div class="row">
-          <div class="float-left  col-sm text-white">
-            <h3 class="font-weight-light finans">Finans</h3>
-            <p class="font-weight-light">Onde você pode controlar seus gastos de uma maneira super fácil!</p>
-          </div>
+          
           <div class="float-right col-sm text-center">
-            <div class="text-center text-white">
-              <p class="font-weight-light">Cadastre agora</p>
+            <div class="text-left text-dark">
+              <h3 class="font-weight-light finans">Finans</h3>
+              <p class="font-weight-light">Onde você pode controlar seus gastos de uma maneira super fácil!</p>
+            
             </div>
             <div class="row">
-              <div class="col-sm text-center">
-                
+              <div class="col-sm text-left">
                 <a href="registro.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
-                  <i class="fab fa-wpforms fa-2x"></i>
+                  <i class="fab fa-wpforms"></i>
                 </a>
-                <a href="consulta.php" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">
-                  <i class="fas fa-database fa-2x"></i>
+                <a href="consulta.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
+                  <i class="fas fa-database"></i>
+                </a>
+                <a href="consulta.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
+                  <i class="fas fa-chart-line"></i>
                 </a>
                 
               </div>
             </div>
+          </div>
+
+          <div class="float-left  col-sm text-white">
+            <img src="../img/analise-rapida.png" alt="">
+            
           </div>
         </div>
         
@@ -98,7 +114,7 @@ session_start();
       
     </section>
 
-    <div class="container">
+    <div class="container dash">
       <section class="secao">
         <div class="row">
       
@@ -108,7 +124,7 @@ session_start();
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                   <a href="dash/dash.html" class="link"><h1 class="h2 text-dark">Painel de Controle</h1></a>
                 </div>
-                <canvas class="my-4 w-100" id="myChart" width="200px" height="80px"></canvas>
+                <canvas class="my-4 w-100" id="myChart" width="400px" height="150px"></canvas>
               </main>
             
           </div>
@@ -182,6 +198,53 @@ session_start();
     </div>
 
 
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          
+          <!-- zap -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=5584996624926&text=Ol%C3%A1%20Lucas%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20de%20finan%C3%A7as!%20%F0%9F%98%80" target="_blank" role="button">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:gabriellucas016@gmail.com" target="_blank" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/gabrielf_lucass/" target="_blank" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/lucas-gabriel-40a935204/" target="_blank" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/lucasgf007" target="_blank" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 - By: Lucas Gabriel 🚀 
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Fim do Footer -->
     
 
     <!-- Modal -->

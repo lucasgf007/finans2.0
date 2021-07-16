@@ -1,7 +1,7 @@
 /* banner (pag inicio.php) */
 
 .banner{
-    padding: 100px;
+    padding: 50px 0px;
 }
 
 .secao{
@@ -13,4 +13,9 @@
 }
 .finans{
     font-size: 50px;
+}
+.dash{
+    background: rgba(0, 0, 0, 0.014);
+    margin-bottom: 20px;
+    border-radius: 20px;
 }

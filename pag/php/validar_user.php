@@ -8,6 +8,7 @@
 <?php
     $email = $_POST["email"];
     $senha = $_POST["senha"];
+    $_SESSION["estaLogado"] = false;
     
     $sql = "SELECT * FROM usuario";
     $result = $conn->query($sql);
@@ -16,9 +17,11 @@
         // comparar
     while($row = $result->fetch_assoc()) {
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
-            header("Location: registro.php?msg=logado");
+            $_SESSION["estaLogado"] = true;
             $_SESSION["email"] = $row["email"];
-            $_SESSION["senha"] = $row["senha"];
+            header("Location: registro.php?msg=logado");
+            
+            
         } else {
             header("Location: ../../login.php?msg=nao_encontrado");
         }

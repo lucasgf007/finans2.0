@@ -1,4 +1,8 @@
+<?php
+session_start();
+?>
 <?php include("conexao.php")?>
+<?php include("restrito/retrito.php")?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>

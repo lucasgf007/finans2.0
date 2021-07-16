@@ -58,11 +58,7 @@ session_start();
         <div class="collapse navbar-collapse float-right text-right" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <?php
-                  <a class="nav-link" href="logout.php">Sair</a>
-                ?>
-              
-              
+                
             </li>
           </ul>
           

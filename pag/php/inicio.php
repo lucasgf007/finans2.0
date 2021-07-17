@@ -57,8 +57,8 @@ session_start();
                   <a class="nav-link" href="consulta.php">Consulta</a>
                 </li>
               </ul>
-              <ul class="navbar-nav mr-auto text-right logout">
-                <li class="nav-item">
+              <ul class="navbar-nav mr-auto  logout">
+                <li class="nav-item text-right">
                   <a href="logout.php" class="nav-link">
                     <i class="fas fa-power-off"></i>
                   </a>

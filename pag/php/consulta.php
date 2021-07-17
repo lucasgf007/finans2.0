@@ -56,16 +56,16 @@ session_start();
             </li>
 
           </ul>
+          <ul class="navbar-nav mr-auto text-right">
+                <li class="nav-item">
+                  <a href="logout.php" class="nav-link">
+                    <i class="fas fa-power-off"></i>
+                  </a>
+                </li>
+              </ul>
           
         </div>
-        <div class="collapse navbar-collapse float-right text-right" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="logout.html">sair</a>
-            </li>
-          </ul>
-          
-        </div>
+        
         
       </div>
     </nav>

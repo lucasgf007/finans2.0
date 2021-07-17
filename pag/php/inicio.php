@@ -45,8 +45,8 @@ session_start();
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
            </button>
-            <div class="collapse navbar-collapse float-left text-left" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse text-left" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto text-left">
                 <li class="nav-item active">
                   <a class="nav-link" href="inicio.php">Início</a>
                 </li>
@@ -57,14 +57,9 @@ session_start();
                   <a class="nav-link" href="consulta.php">Consulta</a>
                 </li>
               </ul>
-              
-            </div>
-          
-          
-            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto text-right">
                 <li class="nav-item">
-                  <a href="logout.php">
+                  <a href="logout.php" class="nav-link">
                     <i class="fas fa-power-off"></i>
                   </a>
                 </li>

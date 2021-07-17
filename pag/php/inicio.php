@@ -105,7 +105,7 @@ session_start();
           </div>
 
           <div class="float-left  col-sm text-white">
-            <img src="../img/analise-rapida.png" alt="">
+            <img class="faturamento" src="../img/analise-rapida.png" alt="">
             
           </div>
         </div>

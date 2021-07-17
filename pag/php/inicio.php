@@ -64,10 +64,9 @@ session_start();
             <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto text-right">
                 <li class="nav-item">
-                <?php
-                  echo '<a href="logout.php?var=sair">logout</a>';
-                ?>
-                  
+                  <a href="logout.php">
+                    <i class="fas fa-power-off"></i>
+                  </a>
                 </li>
               </ul>
               

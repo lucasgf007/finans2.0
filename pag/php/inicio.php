@@ -82,7 +82,7 @@ session_start();
       <div class="container banner">
         <div class="row">
           
-          <div class="float-right col-sm text-center">
+          <div class="float-right col-sm text-center ajuste">
             <div class="text-left text-dark">
               <h3 class="font-weight-light finans">Finans</h3>
               <p class="font-weight-light">Onde você pode controlar seus gastos de uma maneira super fácil!</p>

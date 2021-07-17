@@ -23,10 +23,11 @@
 
 @media (max-width: 540px) {
     .faturamento{
-        padding-top: 15px;
+        padding-top: 12px;
         width: 350px;
+        text-align: center;
     }
     .ajuste{
-        padding-right: 15px;
+        margin-left: 15px;
     }
   }

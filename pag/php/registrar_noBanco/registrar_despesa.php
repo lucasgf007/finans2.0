@@ -1,4 +1,4 @@
-<?php include("conexao.php")?>
+<?php include("../conexao.php")?>
 <?php 
 // sha1 () deixa a senha criptografada 
         $ano =  $_POST["ano"];

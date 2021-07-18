@@ -69,72 +69,75 @@ session_start();
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col mb-5">
-          <h1 class="display-4">Registro de nova despesa</h1>
-        </div>
-      </div>
-
-      <div class="row mb-2">
-        <div class="col-md-2 ajuste_mobile">
-          <select class="form-control" id="ano">
-            <option value="">Ano</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-          </select>
+      <form action="registrar_noBanco/registrar_despesa" method="post">
+        <div class="row">
+          <div class="col mb-5">
+            <h1 class="display-4">Registro de nova despesa</h1>
+          </div>
         </div>
 
-        <div class="col-md-2 ajuste_mobile">
-          <select class="form-control" id="mes">
-            <option value="">Mês</option>
-            <option value="1">Janeiro</option>
-            <option value="2">Fevereiro</option>
-            <option value="3">Março</option>
-            <option value="4">Abril</option>
-            <option value="5">Maio</option>
-            <option value="6">Junho</option>
-            <option value="7">Julho</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setembro</option>
-            <option value="10">Outubro</option>
-            <option value="11">Novembro</option>
-            <option value="12">Dezembro</option>
-          </select>
-        </div>
-        
-        <div class="col-md-2 ajuste_mobile">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
+        <div class="row mb-2">
+          <div class="col-md-2 ajuste_mobile">
+            <select class="form-control" id="ano" name="ano">
+              <option value="">Ano</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+
+          <div class="col-md-2 ajuste_mobile">
+            <select class="form-control" id="mes" name="mes">
+              <option value="">Mês</option>
+              <option value="1">Janeiro</option>
+              <option value="2">Fevereiro</option>
+              <option value="3">Março</option>
+              <option value="4">Abril</option>
+              <option value="5">Maio</option>
+              <option value="6">Junho</option>
+              <option value="7">Julho</option>
+              <option value="8">Agosto</option>
+              <option value="9">Setembro</option>
+              <option value="10">Outubro</option>
+              <option value="11">Novembro</option>
+              <option value="12">Dezembro</option>
+            </select>
+          </div>
+          
+          <div class="col-md-2 ajuste_mobile">
+            <input type="text" class="form-control" placeholder="Dia" id="dia" name="dia" />
+          </div>
+
+          <div class="col-md-6 ajuste_mobile">
+            <select class="form-control" id="tipo" name="tipo">
+              <option value="">Tipo</option>
+              <option value="1">Alimentação</option>
+              <option value="2">Educação</option>
+              <option value="3">Lazer</option>
+              <option value="4">Saúde</option>
+              <option value="5">Transporte</option>
+            </select>
+          </div>
         </div>
 
-        <div class="col-md-6 ajuste_mobile">
-          <select class="form-control" id="tipo">
-            <option value="">Tipo</option>
-            <option value="1">Alimentação</option>
-            <option value="2">Educação</option>
-            <option value="3">Lazer</option>
-            <option value="4">Saúde</option>
-            <option value="5">Transporte</option>
-          </select>
-        </div>
-      </div>
+        <div class="row">
+          <div class="col-md-8 ajuste_mobile">
+            <input type="text" class="form-control" placeholder="Descrição" id="descricao" name="descricao" />
+          </div>
 
-      <div class="row">
-        <div class="col-md-8 ajuste_mobile">
-          <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
-        </div>
+          <div class="col-md-2 ajuste_mobile">
+            <input type="text" class="form-control" placeholder="Valor" id="valor" name="valor"/>
+          </div>
 
-        <div class="col-md-2 ajuste_mobile">
-          <input type="text" class="form-control" placeholder="Valor" id="valor" />
+          <div class="col-md-2 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary" onclick="cadastrarDespesas()">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
         </div>
-
-        <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary" onclick="cadastrarDespesas()">
-            <i class="fas fa-plus"></i>
-          </button>
-        </div>
-      </div>
+      </form>
+      
     </div>
     <!-- modal -->
     <!-- Button trigger modal -->

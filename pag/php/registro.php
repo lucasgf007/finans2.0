@@ -96,18 +96,18 @@ session_start();
 
             <select class="form-control" id="mes" name="mes">
               <option value="">Mês</option>
-              <option value="1">Janeiro</option>
-              <option value="2">Fevereiro</option>
-              <option value="3">Março</option>
-              <option value="4">Abril</option>
-              <option value="5">Maio</option>
-              <option value="6">Junho</option>
-              <option value="7">Julho</option>
-              <option value="8">Agosto</option>
-              <option value="9">Setembro</option>
-              <option value="10">Outubro</option>
-              <option value="11">Novembro</option>
-              <option value="12">Dezembro</option>
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <option value="Março">Março</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Junho">Junho</option>
+              <option value="Julho">Julho</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Setembro">Setembro</option>
+              <option value="Outubro">Outubro</option>
+              <option value="Novembro">Novembro</option>
+              <option value="Dezembro">Dezembro</option>
             </select>
             <!-- <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes"> -->
           </div>
@@ -123,11 +123,11 @@ session_start();
 
             <select class="form-control" id="tipo" name="tipo">
               <option value="">Tipo</option>
-              <option value="1">Alimentação</option>
-              <option value="2">Educação</option>
-              <option value="3">Lazer</option>
-              <option value="4">Saúde</option>
-              <option value="5">Transporte</option>
+              <option value="alimentacao">Alimentação</option>
+              <option value="educação">Educação</option>
+              <option value="lazer">Lazer</option>
+              <option value="saude">Saúde</option>
+              <option value="transporte">Transporte</option>
             </select>
             <!-- <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo"> -->
           </div>

@@ -80,21 +80,21 @@ session_start();
           <div class="col-md-2 ajuste_mobile">
             <!-- ANO -->
 
-            <!-- <select class="form-control" id="ano" name="ano">
+            <select class="form-control" id="ano" name="ano">
               <option value="">Ano</option>
               <option value="2018">2018</option>
               <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
-            </select> -->
-            <input type="text" class="form-control" placeholder="Ano" id="ano" name="ano">
+            </select>
+            <!-- <input type="text" class="form-control" placeholder="Ano" id="ano" name="ano"> -->
             
           </div>
 
           <div class="col-md-2 ajuste_mobile">
           <!-- MÊS -->
 
-            <!-- <select class="form-control" id="mes" name="mes">
+            <select class="form-control" id="mes" name="mes">
               <option value="">Mês</option>
               <option value="1">Janeiro</option>
               <option value="2">Fevereiro</option>
@@ -108,8 +108,8 @@ session_start();
               <option value="10">Outubro</option>
               <option value="11">Novembro</option>
               <option value="12">Dezembro</option>
-            </select> -->
-            <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes">
+            </select>
+            <!-- <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes"> -->
           </div>
           
           <div class="col-md-2 ajuste_mobile">
@@ -121,15 +121,15 @@ session_start();
           <div class="col-md-6 ajuste_mobile">
             <!-- TIPO -->
 
-            <!-- <select class="form-control" id="tipo" name="tipo">
+            <select class="form-control" id="tipo" name="tipo">
               <option value="">Tipo</option>
               <option value="1">Alimentação</option>
               <option value="2">Educação</option>
               <option value="3">Lazer</option>
               <option value="4">Saúde</option>
               <option value="5">Transporte</option>
-            </select> -->
-            <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo">
+            </select>
+            <!-- <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo"> -->
           </div>
         </div>
 
@@ -147,7 +147,8 @@ session_start();
           </div>
 
           <div class="col-md-2 d-flex justify-content-end">
-            <button type="submit" class="btn btn-primary" onclick="cadastrarDespesas()">
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalsucesso">
+            <!-- onclick="cadastrarDespesas()" -->
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -155,11 +156,7 @@ session_start();
       </form>
       
     </div>
-    <!-- modal -->
-    <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#erroGravacao">
-  Launch demo modal
-</button> -->
+    
 
     <!-- Modal  -->
     <div class="modal fade" id="modalGravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,6 +179,11 @@ session_start();
       </div>
     </div>
 
+<!-- modal -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#erroGravacao">
+  Launch demo modal
+</button> -->
     
 
     <!-- Modal -->
@@ -189,7 +191,7 @@ session_start();
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Cadastro feito com sucesso</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

@@ -69,7 +69,7 @@ session_start();
     </nav>
 
     <div class="container">
-      <form action="registrar_noBanco/registrar_despesa" method="post">
+      <form action="registrar_noBanco/registrar_despesa.php" method="post">
         <div class="row">
           <div class="col mb-5">
             <h1 class="display-4">Registro de nova despesa</h1>
@@ -87,7 +87,8 @@ session_start();
               <option value="2020">2020</option>
               <option value="2021">2021</option>
             </select> -->
-            <input type="text" class="form-control" placeholder="Ano" id="ano" name="ano" />
+            <input type="text" class="form-control" placeholder="Ano" id="ano" name="ano">
+            
           </div>
 
           <div class="col-md-2 ajuste_mobile">
@@ -108,13 +109,13 @@ session_start();
               <option value="11">Novembro</option>
               <option value="12">Dezembro</option>
             </select> -->
-            <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes" />
+            <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes">
           </div>
           
           <div class="col-md-2 ajuste_mobile">
             <!-- DIA -->
 
-            <input type="text" class="form-control" placeholder="Dia" id="dia" name="dia" />
+            <input type="text" class="form-control" placeholder="Dia" id="dia" name="dia">
           </div>
 
           <div class="col-md-6 ajuste_mobile">
@@ -128,7 +129,7 @@ session_start();
               <option value="4">Saúde</option>
               <option value="5">Transporte</option>
             </select> -->
-            <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo" />
+            <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo">
           </div>
         </div>
 
@@ -136,13 +137,13 @@ session_start();
           <div class="col-md-8 ajuste_mobile">
             <!-- Descrição -->
 
-            <input type="text" class="form-control" placeholder="Descrição" id="descricao" name="descricao" />
+            <input type="text" class="form-control" placeholder="Descrição" id="descricao" name="descricao">
           </div>
 
           <div class="col-md-2 ajuste_mobile">
             <!-- VALOR -->
             
-            <input type="text" class="form-control" placeholder="Valor" id="valor" name="valor"/>
+            <input type="text" class="form-control" placeholder="Valor" id="valor" name="valor">
           </div>
 
           <div class="col-md-2 d-flex justify-content-end">

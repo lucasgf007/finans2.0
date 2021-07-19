@@ -78,17 +78,22 @@ session_start();
 
         <div class="row mb-2">
           <div class="col-md-2 ajuste_mobile">
-            <select class="form-control" id="ano" name="ano">
+            <!-- ANO -->
+
+            <!-- <select class="form-control" id="ano" name="ano">
               <option value="">Ano</option>
               <option value="2018">2018</option>
               <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
-            </select>
+            </select> -->
+            <input type="text" class="form-control" placeholder="Ano" id="ano" name="ano" />
           </div>
 
           <div class="col-md-2 ajuste_mobile">
-            <select class="form-control" id="mes" name="mes">
+          <!-- MÊS -->
+
+            <!-- <select class="form-control" id="mes" name="mes">
               <option value="">Mês</option>
               <option value="1">Janeiro</option>
               <option value="2">Fevereiro</option>
@@ -102,31 +107,41 @@ session_start();
               <option value="10">Outubro</option>
               <option value="11">Novembro</option>
               <option value="12">Dezembro</option>
-            </select>
+            </select> -->
+            <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes" />
           </div>
           
           <div class="col-md-2 ajuste_mobile">
+            <!-- DIA -->
+
             <input type="text" class="form-control" placeholder="Dia" id="dia" name="dia" />
           </div>
 
           <div class="col-md-6 ajuste_mobile">
-            <select class="form-control" id="tipo" name="tipo">
+            <!-- TIPO -->
+
+            <!-- <select class="form-control" id="tipo" name="tipo">
               <option value="">Tipo</option>
               <option value="1">Alimentação</option>
               <option value="2">Educação</option>
               <option value="3">Lazer</option>
               <option value="4">Saúde</option>
               <option value="5">Transporte</option>
-            </select>
+            </select> -->
+            <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 ajuste_mobile">
+            <!-- Descrição -->
+
             <input type="text" class="form-control" placeholder="Descrição" id="descricao" name="descricao" />
           </div>
 
           <div class="col-md-2 ajuste_mobile">
+            <!-- VALOR -->
+            
             <input type="text" class="form-control" placeholder="Valor" id="valor" name="valor"/>
           </div>
 

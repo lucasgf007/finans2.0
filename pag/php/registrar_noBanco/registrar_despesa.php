@@ -7,31 +7,18 @@
         $tipo =  $_POST["tipo"];
         $descricao =  $_POST["descricao"];
         $valor =  $_POST["valor"];
-    
 
-        $host = "localhost";
-        $usuario = "u158397775_meu_banco";
-        $senha = "1A2b3c4d@";
-        $bd = "u158397775_banco_finans";
-        
+        echo "  /Ano: " . $_POST["ano"]. "  " . "/Mes: " . $_POST["mes"]. " " . "/Dia: ". $_POST["dia"]. " " . "/Tipo: ". $_POST["tipo"]. " " . "/Descrição: ". $_POST["descricao"]. " " . "/Valor: ". $_POST["valor"]."<br>";
     
-        // Create connection
-        $conn = new mysqli($host, $usuario, $senha, $bd); 
-    
-        // Check connection
-        if ($conn->connect_error) {
-            
-            echo "Falha na conexão: (".$conn->connect_error.") ".$conn->connect_error;
-        }
         
-        $sql = "INSERT INTO despesas (ano, mes, dia, tipo, descricao, valor) 
-        VALUES ( '".$ano."', '".$mes."', '".$dia."', '".$tipo."', '".$descricao."', '".$valor."')";
+        // $sql = "INSERT INTO despesas (ano, mes, dia, tipo, descricao, valor) 
+        // VALUES ( '".$ano."', '".$mes."', '".$dia."', '".$tipo."', '".$descricao."', '".$valor."')";
         
-        if ($conn->query($sql) === TRUE) {
-          header("Location: ../registro.php?msg=cadastrou");
-        } else {
-          echo "Error: " . $sql . "<br>" . $conn->error;
-        }
+        // if ($conn->query($sql) === TRUE) {
+        //   header("Location: ../registro.php?msg=cadastrou");
+        // } else {
+        //   echo "Error: " . $sql . "<br>" . $conn->error;
+        // }
         
-        $conn->close();
+        // $conn->close();
 ?>

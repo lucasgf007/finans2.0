@@ -24,7 +24,7 @@
             echo "Falha na conexão: (".$conn->connect_error.") ".$conn->connect_error;
         }
         
-        $sql = "INSERT INTO despesas (nome, email, senha) 
+        $sql = "INSERT INTO despesas (ano, mes, dia, tipo, descricao, valor) 
         VALUES ( '".$ano."', '".$mes."', '".$dia."', '".$tipo."', '".$descricao."', '".$valor."')";
         
         if ($conn->query($sql) === TRUE) {

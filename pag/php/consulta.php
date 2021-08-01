@@ -78,6 +78,10 @@ session_start();
         </div>
       </div>
 
+      <?php
+        echo "olá";
+      ?>
+
       <div class="row mb-2">
         <div class="col-md-2 ajuste_mobile">
           <select class="form-control" id="ano">
@@ -153,10 +157,7 @@ session_start();
             </thead>
               
             <tbody  id="lista_despesas">
-            <?php
-        
-                  echo "ola";
-            ?>
+            
             </tbody>
           </table>
         </div>

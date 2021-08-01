@@ -155,18 +155,7 @@ session_start();
             <tbody  id="lista_despesas">
             <?php
         
-                  $sql = "SELECT * FROM despesas";
-                  $result = $conn->query($sql);
-              
-                  if ($result->num_rows > 0) {
-                      // output data of each row
-                  while($row = $result->fetch_assoc()) {
-                      echo "  /id: " . $row["id"]. "  " . " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]."<br>";
-                  }
-                  } else {
-                      echo "0 results";
-                  }
-                  $conn->close();
+                  echo "ola";
             ?>
             </tbody>
           </table>

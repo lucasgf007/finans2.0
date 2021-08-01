@@ -152,7 +152,21 @@ session_start();
             </thead>
               
             <tbody  id="lista_despesas">
+            <?php
+        
+                  $sql = "SELECT * FROM despesas";
+                  $result = $conn->query($sql);
               
+                  if ($result->num_rows > 0) {
+                      // output data of each row
+                  while($row = $result->fetch_assoc()) {
+                      echo "  /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]."<br>";
+                  }
+                  } else {
+                      echo "0 results";
+                  }
+                  $conn->close();
+            ?>
             </tbody>
           </table>
         </div>
@@ -180,34 +194,7 @@ session_start();
       </div>
     </div>
     
-    <?php
-        $host = "localhost";
-        $usuario = "u158397775_meu_banco";
-        $senha = "1A2b3c4d@";
-        $bd = "u158397775_banco_finans";
-        
-        // Create connection
-        $conn = new mysqli($host, $usuario, $senha, $bd); 
     
-        // Check connection
-        if ($conn->connect_error) {
-            
-            echo "Falha na conexão: (".$conn->connect_error.") ".$conn->connect_error;
-        }
-        
-        $sql = "SELECT * FROM despesas";
-        $result = $conn->query($sql);
-    
-        if ($result->num_rows > 0) {
-            // output data of each row
-        while($row = $result->fetch_assoc()) {
-            echo "  /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]."<br>";
-        }
-        } else {
-            echo "0 results";
-        }
-        $conn->close();
-    ?>
 
   </body>	
 

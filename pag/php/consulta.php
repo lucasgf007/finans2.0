@@ -79,7 +79,7 @@ session_start();
       </div>
 
       <?php
-        echo "olá";
+        echo 'olá';
       ?>
 
       <div class="row mb-2">

@@ -109,7 +109,7 @@ session_start();
               <option value="Novembro">Novembro</option>
               <option value="Dezembro">Dezembro</option>
             </select>
-            <!-- <input type="text" class="form-control" placeholder="mes" id="Mês" name="mes"> -->
+            
           </div>
           
           <div class="col-md-2 ajuste_mobile">
@@ -129,7 +129,7 @@ session_start();
               <option value="saude">Saúde</option>
               <option value="transporte">Transporte</option>
             </select>
-            <!-- <input type="text" class="form-control" placeholder="Tipo" id="tipo" name="tipo"> -->
+            
           </div>
         </div>
 
@@ -197,11 +197,11 @@ session_start();
             </button>
           </div>
           <div class="modal-body">
-            ...
+            A Sua despesa foi cadastrada em nosso banco de dados com sucesso!!
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+            
           </div>
         </div>
       </div>

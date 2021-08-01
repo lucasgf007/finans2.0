@@ -67,14 +67,11 @@ session_start();
         
       </div>
     </nav>
-    <?php
-      echo "olá"
-    ?>
     <div class="container">
       <form action="registrar_noBanco/registrar_despesa.php" method="post">
         <div class="row">
           <div class="col mb-5">
-            <h1 class="display-4">Registra de nova despesa</h1>
+            <h1 class="display-4">Registro de nova despesa</h1>
           </div>
         </div>
 

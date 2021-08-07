@@ -5,10 +5,10 @@ session_start();
 <?php include("restrito/retrito.php")?>
 
 <?php
-    // sql to delete a record
-$sql = "DELETE FROM despesas WHERE id='".$_GET['id']."'";
 
-echo $_GET['id'];
+$id = $_GET['id'];
+    // sql to delete a record
+$sql = "DELETE FROM despesas WHERE id='$id'";
 
 if ($conn->query($sql) === TRUE) {
   header('Location: ../consulta.php?msg=removeSucess');

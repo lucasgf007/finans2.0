@@ -8,6 +8,8 @@ session_start();
     // sql to delete a record
 $sql = "DELETE FROM despesas WHERE id='".$_GET['id']."'";
 
+echo $_GET['id'];
+
 if ($conn->query($sql) === TRUE) {
   header('Location: ../consulta.php?msg=removeSucess');
   

@@ -6,7 +6,7 @@ session_start();
 
 <?php
     // sql to delete a record
-$sql = "DELETE FROM MyGuests WHERE id='".$_GET['id']."'";
+$sql = "DELETE FROM despesas WHERE id='".$_GET['id']."'";
 
 if ($conn->query($sql) === TRUE) {
   header('Location: ../consulta.php?msg=remove');

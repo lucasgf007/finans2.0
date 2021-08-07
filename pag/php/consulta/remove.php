@@ -1,11 +1,10 @@
 <?php
 session_start();
 ?>
-<?php include("conexao.php")?>
+<?php include("../conexao.php")?>
 <?php include("restrito/retrito.php")?>
 
 <?php
-
 
 $id = $_GET['id'];  
     // sql to delete a record

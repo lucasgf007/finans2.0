@@ -9,8 +9,8 @@ session_start();
 $sql = "DELETE FROM despesas WHERE id='".$_GET['id']."'";
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: ../consulta.php?msg=remove');
-  die();
+  header('Location: ../consulta.php?msg=removeSucess');
+  
 } else {
   echo "Error deleting record: " . $conn->error;
 }

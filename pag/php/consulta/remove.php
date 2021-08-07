@@ -6,16 +6,16 @@ session_start();
 
 <?php
 
-$id = $_GET['id'];
+$id = $_GET['id'];  
     // sql to delete a record
-$sql = "DELETE FROM despesas WHERE id='$id'";
+$sql = "DELETE FROM despesas WHERE id = '$id'";
 
-if ($conn->query($sql) === TRUE) {
-  header('Location: ../consulta.php?msg=removeSucess');
+// if ($conn->query($sql) === TRUE) {
+//   header('Location: ../consulta.php?msg=removeSucess');
   
-} else {
-  echo "Error deleting record: " . $conn->error;
-}
+// } else {
+//   echo "Error deleting record: " . $conn->error;
+// }
 
 $conn->close();
 ?>

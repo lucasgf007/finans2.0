@@ -25,6 +25,7 @@
         VALUES ( '".$nome."', '".$email."', '".$senhaUse."')";
         
         if ($conn->query($sql) === TRUE) {
+          $_SESSION["estaLogado"] = true;
           header("Location: inicio.php?msg=sucesso");
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;

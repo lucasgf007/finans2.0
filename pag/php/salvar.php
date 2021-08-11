@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <?php include("conexao.php")?>
 <?php 
 // sha1 () deixa a senha criptografada 

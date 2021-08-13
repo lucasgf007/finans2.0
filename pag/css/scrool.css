@@ -1,0 +1,14 @@
+.subindo{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    /* background-color: black; */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}

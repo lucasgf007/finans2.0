@@ -6,7 +6,7 @@ function Subir(){
     })
 }
 function verificar(){
-    if(window.scrollY <= 30){
+    if(window.scrollY <= 50){
         //remove butao
         document.querySelector('.subindo').style.display = 'none'
     } else{
@@ -14,4 +14,6 @@ function verificar(){
         document.querySelector('.subindo').style.display = 'block'
     }
 }
-setInterval(verificar, 100);
+
+window.addEventListener('scroll', verificar)
+

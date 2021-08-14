@@ -3,7 +3,7 @@
 require_once('autoload.php');
 
 // Initialize NitroPack with your site ID and secret
-$nitro = new NitroPack\SDK\NitroPack('your_site_id', 'your_site_secret');
+$nitro = new NitroPack\SDK\NitroPack('dMiLAzgVwYgcnNaASdgnIsvKowCXuLBg', 'yxuVIWpdbrYKHVP0jveYGhDSnfL2TexO9f2x7sDglBg5HTXK1GDdZH3DgK2Ob6Cw');
 
 // Check any administrative URLs that should clear the cache
 // Purge all cache

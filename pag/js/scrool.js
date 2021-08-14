@@ -5,6 +5,17 @@ function Subir(){
         behavior: 'smooth'
     })
 }
+
+
+
+function abreModal() {
+    $("#myModal").modal({
+      show: true
+    });
+  }
+  
+  setTimeout(abreModal, 5000);
+
 function verificar(){
     if(window.scrollY <= 50){
         //remove butao
@@ -12,6 +23,7 @@ function verificar(){
     } else{
         //add butao
         document.querySelector('.subindo').style.display = 'block'
+        
     }
 }
 

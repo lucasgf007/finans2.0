@@ -65,9 +65,9 @@
               
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  <h1>Todas suas finanças em um so lugar</h1>
+                  <p class="pb-5">Não perca tempo e fique por dentro de tudo que está acontecendo com seu dinheiro. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  
                 </div>
               </div>
             </div>
@@ -75,9 +75,9 @@
               
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Another example.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <h1>Organize Sua Empresa</h1>
+                  <p>Isso mesmo que você leu, nossa sistema oferece um espaço ideal para sua empresa com um painel excluiso de dashbord para que sua equipe poassa acompanhar e analiazar os gastos.</p>
+                  <p><a class="btn btn-lg btn-primary" href="cadastro.php" role="button">Começar agora</a></p>
                 </div>
               </div>
             </div>
@@ -85,9 +85,9 @@
               
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>One more for good measure.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                  <h1>Finas resolve sua vida</h1>
+                  <p class="pb-5">Ta com probelas fincanceiros? comece a se organizar e liberar uma graninha para o final de semana. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  
                 </div>
               </div>
             </div>
@@ -191,6 +191,8 @@
       <i class="fas fa-angle-double-up"></i>
     </div>
 
+    
+
     <script src="pag/js/scrool.js"></script>
 
     <!-- Bootstrap core JavaScript
@@ -202,5 +204,35 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../assets/js/vendor/holder.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <img src="pag/img/logo.png" width="50" height="35" alt="Orçamento pessoal">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times sair"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>Ei, gostou do nosso sistema?</h5>
+            <p>Receba nossas novidades sempre atualizadas e exclusitvas</p>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </body>
 </html>

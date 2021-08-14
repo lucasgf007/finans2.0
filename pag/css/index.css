@@ -74,6 +74,11 @@ body {
     letter-spacing: -.05rem;
   }
 
+  /* sair modal*/
+  .sair{
+    color: white;
+    font-size: 18px;
+  }
 
   
   

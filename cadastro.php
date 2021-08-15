@@ -42,7 +42,7 @@
     <section class="container">
         <form action="pag/php/salvar.php" method="post">
             <div class="form-group">
-                <label for="exampleInputPassword1">Nome</label>
+                <label for="exampleInputPassword1">Usuário</label>
                 <input type="text" class="form-control" id="exampleInputPassword1" name="nome" placeholder="Nome">
             </div>
           <div class="form-group">

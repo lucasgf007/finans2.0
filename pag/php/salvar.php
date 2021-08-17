@@ -28,23 +28,11 @@ session_start();
         $sql = "INSERT INTO usuario (nome, email, senha) 
         VALUES ( '".$nome."', '".$email."', '".$senhaUse."')";
 
-        $sql = "SELECT * FROM usuario";
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0){
-            // comparar
-            while($row = $result->fetch_assoc()) {
-              if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
-                $_SESSION["ID"] = $row["id"];
-
-              }
-            }
-        }
-            
-        
         if ($conn->query($sql) === TRUE) {
           $_SESSION["estaLogado"] = true;
           header("Location: inicio.php?msg=sucesso");
+          $_SESSION["email"] = $email;
+          $_SESSION["senha"] = $senhaUse;
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }

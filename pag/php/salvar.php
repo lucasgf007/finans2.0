@@ -7,7 +7,7 @@ session_start();
         $nome =  $_POST["nome"];
         $email =  $_POST["email"];
         $senhaUse = sha1($_POST["senha"]);
-        //$_SESSION["ID"] = " ";
+        $_SESSION["ID"] = " ";
         
         
         $host = "localhost";
@@ -31,7 +31,7 @@ session_start();
         if ($conn->query($sql) === TRUE) {
           //$_SESSION["estaLogado"] = true;
           //header("Location: inicio.php?msg=sucesso");
-          header("Location: ../../login.php?msg=sucesso")
+          header("Location: ../../login.php");
           //$_SESSION["email"] = $email;
           //$_SESSION["senha"] = $senhaUse;
         } else {

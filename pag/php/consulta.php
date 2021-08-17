@@ -188,9 +188,13 @@ session_start();
               
      if ($result->num_rows > 0) {
                       // output data of each row
-        while($row = $result->fetch_assoc()) {
-          echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
-        }
+        
+          while($row = $result->fetch_assoc()) {
+            if($row["id_usuario"] == $_SESSION["ID"]){
+              echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
+            }
+          }
+        
      } else {
       echo "0 results";
       }

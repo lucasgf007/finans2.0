@@ -265,8 +265,7 @@ session_start();
   <?php
     $msg = $_GET['msg'];
 
-    if($msg === 'sucesso'){
-      $email = $_SESSION["email"];
+    $email = $_SESSION["email"];
       $senha = $_SESSION["senha"];
       $_SESSION["ID"];
 
@@ -286,6 +285,9 @@ session_start();
       }
       
       $conn->close();
+
+    if($msg === 'sucesso'){
+      
 
 
     }

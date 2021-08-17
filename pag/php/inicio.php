@@ -277,7 +277,8 @@ session_start();
           // comparar
       while($row = $result->fetch_assoc()) {
           if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
-              $_SESSION["ID"] = $row["id"];           
+              //$_SESSION["ID"] = $row["id"];           
+              echo "deu crt"
           }
       }
       } else {

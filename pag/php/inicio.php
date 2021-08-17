@@ -262,44 +262,7 @@ session_start();
         </div>
       </div>
     </div>
-  <?php
-    $msg = $_GET['msg'];
-
-    $email = $_SESSION["email"];
-      $senha = $_SESSION["senha"];
-      $_SESSION["ID"];
-
-      $sql = "SELECT * FROM usuario";
-      $result = $conn->query($sql);
-
-      if ($result->num_rows > 0) {
-          // comparar
-      while($row = $result->fetch_assoc()) {
-          if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
-              //$_SESSION["ID"] = $row["id"];           
-              echo "deu crt";
-          }
-      }
-      } else {
-          echo "0 results";
-      }
-      
-      $conn->close();
-
-    if($msg === 'sucesso'){
-      
-
-
-    }
-
   
-  ?>
-
-
-
-
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

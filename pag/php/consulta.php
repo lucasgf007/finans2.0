@@ -188,6 +188,7 @@ session_start();
               
      if ($result->num_rows > 0) {
                       // output data of each row
+          echo  $_SESSION["ID"];
         
           while($row = $result->fetch_assoc()) {
             if($row["id_usuario"] == $_SESSION["ID"]){

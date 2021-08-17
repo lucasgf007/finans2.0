@@ -16,8 +16,8 @@
         //echo "  /Ano: " . $_POST["ano"]. "  " . "/Mes: " . $_POST["mes"]. " " . "/Dia: ". $_POST["dia"]. " " . "/Tipo: ". $_POST["tipo"]. " " . "/Descrição: ". $_POST["descricao"]. " " . "/Valor: ". $_POST["valor"]."<br>";
     
         
-        $sql = "INSERT INTO despesas (ano, mes, dia, tipo, descricao, valor) 
-        VALUES ( '".$ano."', '".$mes."', '".$dia."', '".$tipo."', '".$descricao."', '".$valor."')";
+        $sql = "INSERT INTO despesas (ano, mes, dia, tipo, descricao, valor, id_usuario) 
+        VALUES ( '".$ano."', '".$mes."', '".$dia."', '".$tipo."', '".$descricao."', '".$valor."', '".$id."')";
         
         if ($conn->query($sql) === TRUE) {
           header("Location: ../registro.php?msg=cadastrou");

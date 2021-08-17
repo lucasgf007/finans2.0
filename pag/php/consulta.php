@@ -194,6 +194,8 @@ session_start();
      } else {
       echo "0 results";
       }
+      echo $_SESSION["ID"];
+
      $conn->close();
     ?>
 

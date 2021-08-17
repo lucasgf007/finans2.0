@@ -1,4 +1,8 @@
 <?php include("../conexao.php")?>
+<?php
+    // Start the session
+    session_start();
+?>
 <?php 
 // sha1 () deixa a senha criptografada 
         $ano =  $_POST["ano"];
@@ -7,6 +11,7 @@
         $tipo =  $_POST["tipo"];
         $descricao =  $_POST["descricao"];
         $valor =  $_POST["valor"];
+        $id = $_SESSION["ID"];
 
         //echo "  /Ano: " . $_POST["ano"]. "  " . "/Mes: " . $_POST["mes"]. " " . "/Dia: ". $_POST["dia"]. " " . "/Tipo: ". $_POST["tipo"]. " " . "/Descrição: ". $_POST["descricao"]. " " . "/Valor: ". $_POST["valor"]."<br>";
     

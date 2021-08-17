@@ -3,7 +3,7 @@
 session_start(); // Inicializa a sessão
 
     if($_SESSION["estaLogado"] == false){
-        header("Location: ../../../login.php?msg=desconectado");
+        header("Location: ../../../index.html?msg=desconectado");
         $_SESSION["ID"] = " ";
     }
 

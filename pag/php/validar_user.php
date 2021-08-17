@@ -19,12 +19,10 @@
     while($row = $result->fetch_assoc()) {
         if( ($row["email"] == $email || $row["nome"] == $email) && $row["senha"] == sha1($senha)){
             $_SESSION["estaLogado"] = true;
-            $_SESSION["email"] = $row["email"];
+            //$_SESSION["email"] = $row["email"];
             $_SESSION["ID"] = $row["id"];
 
             header("Location: inicio.php?msg=logado");
-            
-            
         } else {
             header("Location: ../../login.php?msg=nao_encontrado");
         }

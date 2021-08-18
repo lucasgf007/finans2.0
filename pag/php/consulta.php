@@ -201,7 +201,7 @@ session_start();
               $cont = $row["valor"] + $cont;
             }
           }
-          echo "<hr>"
+          echo "<hr>";
           echo "Total = " . $cont;
         
      } else {

@@ -201,6 +201,7 @@ session_start();
               $cont = $row["valor"] + $cont;
             }
           }
+          $cont = "<script>document.write(total)</script>";
           echo "<hr>";
           echo "Total = " . $cont;
         

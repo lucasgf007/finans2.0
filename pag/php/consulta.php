@@ -216,7 +216,7 @@ session_start();
      $conn->close();
     ?>
     <script type="text/javascript">
-      var total = <?php echo $cont ?>
+      var total = <?php $cont ?>
       console.log(total);
     </script>
 

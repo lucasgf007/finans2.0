@@ -180,6 +180,8 @@ session_start();
         </div>
       </div>
     </div>
+
+    
     
     <?php
         
@@ -201,9 +203,10 @@ session_start();
               $cont = $row["valor"] + $cont;
             }
           }
-          $cont = "<script>document.write(total)</script>";
+          
           echo "<hr>";
           echo "Total = " . $cont;
+          
         
      } else {
       echo "0 results";
@@ -212,6 +215,10 @@ session_start();
 
      $conn->close();
     ?>
+    <script type="text/javascript">
+      var total = <?php echo $cont ?>
+      console.log(total);
+    </script>
 
   </body>	
 

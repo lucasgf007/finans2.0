@@ -1,5 +1,4 @@
-var total;
-console.log(total);
+
 
 class Despesas{
     constructor(ano, mes, dia, tipo, descricao, valor){

@@ -248,7 +248,14 @@ session_start();
       </div>
     </div>
 
-    
+    <?php
+        $name = "Teste";
+    ?>
+  
+    <script type="text/javascript">
+        var x = "<?php echo"$name"?>";
+        console.log(x)
+    </script>
     
     
 

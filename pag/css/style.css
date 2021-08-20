@@ -5,6 +5,12 @@
 .total{
     border-top: 1px solid #3b3b3b;
 }
+.logout{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 
 /* AJUSTE MOBILE */

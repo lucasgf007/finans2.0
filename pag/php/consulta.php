@@ -218,7 +218,7 @@ session_start();
               ?>
             </tbody>
           </table>
-          <div class="mt-3 text-right total">
+          <div class="mt-4 text-right total">
                 <p class="font-weight-bold">
                   <?="Gastos Totais = " . $cont ?>
                 </p>

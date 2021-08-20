@@ -138,48 +138,69 @@ session_start();
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1,001</td>
-                    <td>Lorem</td>
-                    <td>ipsum</td>
-                    <td>dolor</td>
-                    <td>sit</td>
-                  </tr>
-                  <tr>
-                    <td>1,002</td>
-                    <td>amet</td>
-                    <td>consectetur</td>
-                    <td>adipiscing</td>
-                    <td>elit</td>
-                  </tr>
-                  <tr>
-                    <td>1,003</td>
-                    <td>Integer</td>
-                    <td>nec</td>
-                    <td>odio</td>
-                    <td>Praesent</td>
-                  </tr>
-                  <tr>
-                    <td>1,003</td>
-                    <td>libero</td>
-                    <td>Sed</td>
-                    <td>cursus</td>
-                    <td>ante</td>
-                  </tr>
-                  <tr>
-                    <td>1,003</td>
-                    <td>Integer</td>
-                    <td>nec</td>
-                    <td>odio</td>
-                    <td>Praesent</td>
-                  </tr>
-                  <tr>
-                    <td>1,003</td>
-                    <td>libero</td>
-                    <td>Sed</td>
-                    <td>cursus</td>
-                    <td>ante</td>
-                  </tr>
+                  
+                  <?php
+                
+                $sql = "SELECT * FROM despesas";
+                $result = $conn->query($sql);
+                        
+                if ($result->num_rows > 0) {
+                                // output data of each row
+                    $_SESSION["ID"];
+                    $cont = 0;
+                  
+                    while($row = $result->fetch_assoc()) {
+                      if($row["id_usuario"] == $_SESSION["ID"]){
+          
+                        //echo "<table><tbody> <tr><td>". $row["ano"]."</td><td>". $row["mes"]."</td><td>". $row["dia"]. "</td><td>". $row["tipo"].  "</td><td>". $row["descricao"]."</td><td>". $row["valor"]. "</td><td>". "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a>" "</td></tr></tbody></table>";
+                        //echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
+                        if($row["mes"] === "Junho"){
+                          $row["mes"] = "06";
+                        } else if($row["mes"] === "Janeiro"){
+                          $row["mes"] = "01";
+                        } else if($row["mes"] === "Fevereiro"){
+                          $row["mes"] = "02";
+                        } else if($row["mes"] === "Março"){
+                          $row["mes"] = "03";
+                        } else if($row["mes"] === "Abril"){
+                          $row["mes"] = "04";
+                        } else if($row["mes"] === "Maio"){
+                          $row["mes"] = "05";
+                        } else if($row["mes"] === "Julho"){
+                          $row["mes"] = "07";
+                        } else if($row["mes"] === "Agosto"){
+                          $row["mes"] = "08";
+                        } else if($row["mes"] === "Setembro"){
+                          $row["mes"] = "09";
+                        } else if($row["mes"] === "Outubro"){
+                          $row["mes"] = "10";
+                        } else if($row["mes"] === "Novembro"){
+                          $row["mes"] = "11";
+                        } else if($row["mes"] === "Dezembro"){
+                          $row["mes"] = "12";
+                        }
+                        ?>
+                        <?=
+                          "<tr>
+                            <td>" . $row["id"] . "</td>
+                            <td>" . $row["dia"] . "/" . $row["mes"] . "/" . $row["ano"] . "</td>
+                            <td>" . $row["tipo"] . "</td>
+                            <td>" . $row["descricao"] . "</td>
+                            <td>" . $row["valor"] . "</td>
+                          </tr>"
+                        ?>
+                        <?php
+                        
+                      }
+                    }
+                    
+                } else {
+                echo "0 results";
+                }
+                // echo $_SESSION["ID"];
+          
+                $conn->close();
+              ?>
                   
                 </tbody>
               </table>

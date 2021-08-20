@@ -1,4 +1,6 @@
-
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 class Despesas{
     constructor(ano, mes, dia, tipo, descricao, valor){

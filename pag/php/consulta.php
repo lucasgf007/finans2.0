@@ -59,7 +59,7 @@ session_start();
           </ul>
           <ul class="navbar-nav mr-auto text-right logout">
                 <li class="nav-item">
-                  <a href="logout.php" class="nav-link">
+                  <a href="logout.php" class="nav-link" data-toggle="tooltip" data-placement="right" title="Em Breve" >
                     <i class="fas fa-power-off"></i>
                   </a>
                 </li>

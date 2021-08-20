@@ -169,7 +169,29 @@ session_start();
                         //echo "<table><tbody> <tr><td>". $row["ano"]."</td><td>". $row["mes"]."</td><td>". $row["dia"]. "</td><td>". $row["tipo"].  "</td><td>". $row["descricao"]."</td><td>". $row["valor"]. "</td><td>". "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a>" "</td></tr></tbody></table>";
                         //echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
                         if($row["mes"] === "Junho"){
-                          $row["mes"] = 06;
+                          $row["mes"] = "06";
+                        } else if($row["mes"] === "Janeiro"){
+                          $row["mes"] = "01";
+                        } else if($row["mes"] === "Fevereiro"){
+                          $row["mes"] = "02";
+                        } else if($row["mes"] === "Março"){
+                          $row["mes"] = "03";
+                        } else if($row["mes"] === "Abril"){
+                          $row["mes"] = "04";
+                        } else if($row["mes"] === "Maio"){
+                          $row["mes"] = "05";
+                        } else if($row["mes"] === "Julho"){
+                          $row["mes"] = "07";
+                        } else if($row["mes"] === "Agosto"){
+                          $row["mes"] = "08";
+                        } else if($row["mes"] === "Setembro"){
+                          $row["mes"] = "09";
+                        } else if($row["mes"] === "Outubro"){
+                          $row["mes"] = "10";
+                        } else if($row["mes"] === "Novembro"){
+                          $row["mes"] = "11";
+                        } else if($row["mes"] === "Dezembro"){
+                          $row["mes"] = "12";
                         }
                         ?>
                         <?=
@@ -186,10 +208,6 @@ session_start();
                       }
                     }
                     
-                    echo "<hr>";
-                    echo "Total = " . $cont;
-                    
-                  
                 } else {
                 echo "0 results";
                 }
@@ -199,6 +217,11 @@ session_start();
               ?>
             </tbody>
           </table>
+          <div class="mt-3">
+                <p>
+                  <?="Total = " . $cont ?>
+                </p>
+          </div>
         </div>
       </div>
     </div>

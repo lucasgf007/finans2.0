@@ -91,7 +91,7 @@ session_start();
                 <a href="consulta.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
                   <i class="fas fa-database"></i>
                 </a>
-                <a href="dash/dash.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
+                <a href="dash/dash.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">
                   <i class="fas fa-chart-line"></i>
                 </a>
                 
@@ -117,7 +117,7 @@ session_start();
             
               <main role="main" class="col-md-9 ml-sm-auto col-lg-10 ">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <a href="dash/dash.html" class="link"><h1 class="h2 text-dark">Painel de Controle</h1></a>
+                  <a href="dash/dash.php" class="link"><h1 class="h2 text-dark">Painel de Controle</h1></a>
                 </div>
                 <canvas class="my-4 w-100" id="myChart" width="400px" height="150px"></canvas>
               </main>

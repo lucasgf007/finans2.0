@@ -172,22 +172,29 @@ session_start();
                         ?>
                         <?=
                           "<tr>
-                            <td>" . $row["ano"]. "</td>
-                            <td>" . $row["mes"]. "</td>
-                            <td>ipsum</td>
-                            <td>dolor</td>
-                            <td>sit</td>
+                            <td>" . $row["dia"] . "/" . $row["mes"] . "/" . $row["ano"] . "</td>
+                            <td>" . $row["tipo"] . "</td>
+                            <td>" . $row["descricao"] . "</td>
+                            <td>" . $row["valor"] . "</td>
+                            <td> <a href='consulta/remove.php?id=" . $row["id"] . "'> Excluir </a> </td>
                           </tr>"
                         ?>
                         <?php
                         $cont = $row["valor"] + $cont;
                       }
                     }
-                    
-                    echo "<hr>";
-                    echo "Total = " . $cont;
-                    
-                  
+                    ?>                   
+            </tbody>
+          </table>
+                    <?=
+                        "<div >
+                        <p>
+                        Total = ". $cont"
+                        </p>
+                        </div>"
+                    //echo "Total = " . $cont;
+                    ?>
+              <?php
                 } else {
                 echo "0 results";
                 }
@@ -195,8 +202,6 @@ session_start();
           
                 $conn->close();
               ?>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>

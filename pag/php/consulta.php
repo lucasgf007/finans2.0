@@ -153,7 +153,48 @@ session_start();
             </thead>
               
             <tbody  id="lista_despesas">
-            
+              <?php
+                
+                $sql = "SELECT * FROM despesas";
+                $result = $conn->query($sql);
+                        
+                if ($result->num_rows > 0) {
+                                // output data of each row
+                    $_SESSION["ID"];
+                    $cont = 0;
+                  
+                    while($row = $result->fetch_assoc()) {
+                      if($row["id_usuario"] == $_SESSION["ID"]){
+          
+                        //echo "<table><tbody> <tr><td>". $row["ano"]."</td><td>". $row["mes"]."</td><td>". $row["dia"]. "</td><td>". $row["tipo"].  "</td><td>". $row["descricao"]."</td><td>". $row["valor"]. "</td><td>". "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a>" "</td></tr></tbody></table>";
+                        //echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
+          
+                        ?>
+                        <?=
+                          "<tr>
+                            <td>" . $row["ano"]. "</td>
+                            <td>" . $row["mes"]. "</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                          </tr>"
+                        ?>
+                        <?php
+                        $cont = $row["valor"] + $cont;
+                      }
+                    }
+                    
+                    echo "<hr>";
+                    echo "Total = " . $cont;
+                    
+                  
+                } else {
+                echo "0 results";
+                }
+                // echo $_SESSION["ID"];
+          
+                $conn->close();
+              ?>
             </tbody>
           </table>
         </div>
@@ -183,38 +224,10 @@ session_start();
 
     
     
-    <?php
-        
-     $sql = "SELECT * FROM despesas";
-     $result = $conn->query($sql);
-              
-     if ($result->num_rows > 0) {
-                      // output data of each row
-          $_SESSION["ID"];
-          $cont = 0;
-        
-          while($row = $result->fetch_assoc()) {
-            if($row["id_usuario"] == $_SESSION["ID"]){
-
-              //echo "<table><tbody> <tr><td>". $row["ano"]."</td><td>". $row["mes"]."</td><td>". $row["dia"]. "</td><td>". $row["tipo"].  "</td><td>". $row["descricao"]."</td><td>". $row["valor"]. "</td><td>". "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a>" "</td></tr></tbody></table>";
+    
 
 
-              echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
-              $cont = $row["valor"] + $cont;
-            }
-          }
-          
-          echo "<hr>";
-          echo "Total = " . $cont;
-          
-        
-     } else {
-      echo "0 results";
-      }
-      // echo $_SESSION["ID"];
 
-     $conn->close();
-    ?>
     <script type="text/javascript">
       var total = <?php $cont ?>
       console.log(total);

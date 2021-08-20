@@ -2,6 +2,9 @@
 .sair{
     color: rgba(255, 0, 0, 0.938);
 }
+.total{
+    border-top: 1px solid #3b3b3b;
+}
 
 
 /* AJUSTE MOBILE */

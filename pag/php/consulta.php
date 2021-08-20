@@ -218,9 +218,9 @@ session_start();
               ?>
             </tbody>
           </table>
-          <div class="mt-3 text-right">
+          <div class="mt-3 text-right total">
                 <p class="font-weight-bold">
-                  <?="Total = " . $cont ?>
+                  <?="Gastos Totais = " . $cont ?>
                 </p>
           </div>
         </div>
@@ -247,19 +247,6 @@ session_start();
         </div>
       </div>
     </div>
-
-    <?php
-        $name = "Teste";
-    ?>
-  
-    <script type="text/javascript">
-        var x = "<?php echo"$name"?>";
-        console.log(x)
-    </script>
-    
-    
-
-
 
     <script type="text/javascript">
       var total = "<? $cont ?>"

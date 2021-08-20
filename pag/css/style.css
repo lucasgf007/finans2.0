@@ -1,3 +1,9 @@
+/* sair */
+.sair{
+    color: rgba(255, 0, 0, 0.938);
+}
+
+
 /* AJUSTE MOBILE */
 @media(max-width: 768px){
     .ajuste_mobile{

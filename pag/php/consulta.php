@@ -201,7 +201,7 @@ session_start();
                             <td>" . $row["tipo"] . "</td>
                             <td>" . $row["descricao"] . "</td>
                             <td>" . $row["valor"] . "</td>
-                            <td> <a href='consulta/remove.php?id=" . $row["id"]. "'> <i class='far fa-times-circle'></i> </a> </td>
+                            <td> <a href='consulta/remove.php?id=" . $row["id"]. "'> <i class='far fa-times-circle sair'></i> </a> </td>
                           </tr>"
                         ?>
                         <?php

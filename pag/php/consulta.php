@@ -168,7 +168,9 @@ session_start();
           
                         //echo "<table><tbody> <tr><td>". $row["ano"]."</td><td>". $row["mes"]."</td><td>". $row["dia"]. "</td><td>". $row["tipo"].  "</td><td>". $row["descricao"]."</td><td>". $row["valor"]. "</td><td>". "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a>" "</td></tr></tbody></table>";
                         //echo " /Ano: " . $row["ano"]. "  " . "/Mes: " . $row["mes"]. " " . "/Dia: ". $row["dia"]. " " . "/Tipo: ". $row["tipo"]. " " . "/Descrição: ". $row["descricao"]. " " . "/Valor: ". $row["valor"]. "  " . "<a href='consulta/remove.php?id=". $row["id"]."'> Excluir </a> <br>";
-          
+                        if($row["mes"] === "Junho"){
+                          $row["mes"] = 06;
+                        }
                         ?>
                         <?=
                           "<tr>
@@ -229,7 +231,7 @@ session_start();
 
 
     <script type="text/javascript">
-      var total = <?php $cont ?>
+      var total = <? $cont ?>
       console.log(total);
     </script>
 

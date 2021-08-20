@@ -133,7 +133,8 @@ session_start();
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary" onclick="pesquisarDespesa()">
+          <button type="button" class="btn btn-primary">
+          <!-- onclick="pesquisarDespesa()" -->
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -200,7 +201,7 @@ session_start();
                             <td>" . $row["tipo"] . "</td>
                             <td>" . $row["descricao"] . "</td>
                             <td>" . $row["valor"] . "</td>
-                            <td> <a href='consulta/remove.php?id=" . $row["id"]. "'> Excluir </a> </td>
+                            <td> <a href='consulta/remove.php?id=" . $row["id"]. "'> <i class='far fa-times-circle'></i> </a> </td>
                           </tr>"
                         ?>
                         <?php
@@ -217,8 +218,8 @@ session_start();
               ?>
             </tbody>
           </table>
-          <div class="mt-3">
-                <p>
+          <div class="mt-3 text-right">
+                <p class="font-weight-bold">
                   <?="Total = " . $cont ?>
                 </p>
           </div>

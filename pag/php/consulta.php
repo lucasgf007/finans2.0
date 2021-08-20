@@ -59,7 +59,7 @@ session_start();
           </ul>
           <ul class="navbar-nav mr-auto text-right logout">
                 <li class="nav-item">
-                  <a href="logout.php" class="nav-link" data-toggle="tooltip" data-placement="right" title="Em Breve" >
+                  <a href="logout.php" class="nav-link" >
                     <i class="fas fa-power-off"></i>
                   </a>
                 </li>
@@ -133,7 +133,7 @@ session_start();
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Em Breve" >
           <!-- onclick="pesquisarDespesa()" -->
             <i class="fas fa-search"></i>
           </button>

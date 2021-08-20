@@ -255,7 +255,7 @@ session_start();
 
 
     <script type="text/javascript">
-      var total = <? $cont ?>
+      var total = "<? $cont ?>"
       console.log(total);
     </script>
 

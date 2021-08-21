@@ -75,7 +75,7 @@ session_start();
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tabela.html">
+                <a class="nav-link" href="tabela.php">
                   <span data-feather="file"></span>
                   Tabela
                 </a>

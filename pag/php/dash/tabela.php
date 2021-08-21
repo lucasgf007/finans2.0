@@ -76,7 +76,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="painel.html">
+                <a class="nav-link" href="painel.php">
                   <span data-feather="bar-chart-2"></span>
                   Dash
                 </a>

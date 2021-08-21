@@ -1,8 +1,8 @@
 <?php
 session_start();
 ?>
-<?php include("conexao.php")?>
-<?php include("restrito/retrito.php")?>
+<?php include("../conexao.php")?>
+<?php include("../restrito/retrito.php")?>
 
 <!doctype html>
 <html lang="pt-br">

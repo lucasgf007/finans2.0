@@ -195,15 +195,18 @@ session_start();
                     }
                     
                 } else {
-                echo "0 results";
+                  ?>
+                  
+                </tbody>
+              </table>
+               <h1>Vc não colocou nada</h1>
+              <?php
+                
                 }
                 // echo $_SESSION["ID"];
           
                 $conn->close();
               ?>
-                  
-                </tbody>
-              </table>
             </div>
           </div>
       

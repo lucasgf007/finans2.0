@@ -212,13 +212,9 @@ session_start();
                 } else {
                   
                   ?>
-                    <thead>
-                      <tr>
-                        <th>
-                          <h4 class="text-center font-weight-light"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
-                        </th>
-                      </tr>
-                    </thead>
+                    
+                    <h4 class="text-center font-weight-light border-bottom"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
+                    
                   <?php
 
                 }

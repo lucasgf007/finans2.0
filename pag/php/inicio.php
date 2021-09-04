@@ -197,7 +197,7 @@ session_start();
                 } else {
                   ?>
                   
-                <h4 class="text-center font-weight-light">Cadastre uma despesa para que possa visualizar na tabela</h4>
+                <h4 class="text-center font-weight-light"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
 
                   <?php
                 }

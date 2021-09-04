@@ -210,7 +210,17 @@ session_start();
                     }
                     
                 } else {
-                echo "0 results";
+                  
+                  ?>
+                    <thead>
+                      <tr>
+                        <th>
+                          <h4 class="text-center font-weight-light"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
+                        </th>
+                      </tr>
+                    </thead>
+                  <?php
+
                 }
                 // echo $_SESSION["ID"];
           

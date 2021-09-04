@@ -199,7 +199,7 @@ session_start();
                   
                 </tbody>
               </table>
-               <h1>Vc não colocou nada</h1>
+               <h4 class="text-center font-weight-light">Cadastre uma despesa para que possa visualizar na tabela</h4>
               <?php
                 
                 }

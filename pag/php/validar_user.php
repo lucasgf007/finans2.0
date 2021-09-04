@@ -18,7 +18,7 @@
     if ($result->num_rows > 0) {
         // comparar
     while($row = $result->fetch_assoc()) {
-        if( $row["nome"] == $nome ){
+        if( $row["nome"] == $nome && $row["senha"] == sha1($senha)){
 
             $_SESSION["estaLogado"] = true;
             header("Location: inicio.php?msg=logado");

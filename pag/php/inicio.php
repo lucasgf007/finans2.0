@@ -197,16 +197,18 @@ session_start();
                 } else {
                   ?>
                   
-                </tbody>
-              </table>
-               <h4 class="text-center font-weight-light">Cadastre uma despesa para que possa visualizar na tabela</h4>
-              <?php
-                
+                <h4 class="text-center font-weight-light">Cadastre uma despesa para que possa visualizar na tabela</h4>
+
+                  <?php
                 }
-                // echo $_SESSION["ID"];
+                
           
                 $conn->close();
-              ?>
+                ?>
+                  
+                </tbody>
+              </table>
+              
             </div>
           </div>
       

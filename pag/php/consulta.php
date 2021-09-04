@@ -213,7 +213,7 @@ session_start();
                   
                   ?>
                     
-                    <h4 class="text-center font-weight-light border-bottom"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
+                    <h4 class="text-center font-weight-light"> "Cadastre uma despesa para que possa visualizar na tabela"</h4>
                     
                   <?php
 
@@ -225,7 +225,7 @@ session_start();
             </tbody>
           </table>
           <div class="mt-4 text-right total">
-                <p class="font-weight-bold">
+                <p class="font-weight-bold pt-2">
                   <?="Gastos Totais = " . $cont ?>
                 </p>
           </div>
